@@ -398,7 +398,6 @@ void Result::printTagsInPolygonsDisjunction(std::string str)
                 {
                     file << "  " << std::setw(4) << std::left << result.data[j].tag_id << " ";
                     file << std::setprecision(17);
-                    //file << "   " << std::setw(20) << std::left << data[j].point.x << "   " << std::setw(20) << std::left << data[j].point.y;
                     file << std::endl;
                 }
         }
@@ -471,7 +470,6 @@ void Result::printStatistics(std::string str)
             pointsApp.tag_id = tag_id;
             pointsApp.appearance = appearances;
             pointsAppearance.pointsApp.push_back(pointsApp);
-            //file << "  " << std::setw(4) << std::left << tag_id << "         " << std::setw(4) << std::left << appearances << std::endl;
             tag_id = data[j].tag_id;
             appearances = 0;
         }
