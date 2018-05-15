@@ -450,7 +450,7 @@ void Result::printStatistics(std::string str)
     if (!file)
         std::cout << "something went wrong with " << str << std::endl;
 
-    for (auto i = 0; i < data.size() ; i++)
+    for (auto i = 0; i < data.size(); i++)
     {
         int sum = 0;
         for (auto j = 0; j < data[0].isInPolygon.size(); j++)
@@ -458,7 +458,7 @@ void Result::printStatistics(std::string str)
         if (sum == 0)
             pointsBeyond++;
     }
-        
+
     int tag_id = 0;
     int appearances = 0;
     this->sort();
@@ -479,17 +479,19 @@ void Result::printStatistics(std::string str)
             appearances += data[j].isInPolygon[i];
         }
     }
-            pointsApp.tag_id = tag_id;
-            pointsApp.appearance = appearances;
-            pointsAppearance.pointsApp.push_back(pointsApp);
+    pointsApp.tag_id = tag_id;
+    pointsApp.appearance = appearances;
+    pointsAppearance.pointsApp.push_back(pointsApp);
 
     std::sort(pointsAppearance.pointsApp.begin(), pointsAppearance.pointsApp.end());
-    file << " Tag_ids with most appearances" << std::endl << std::endl;
+    file << " Tag_ids with most appearances" << std::endl
+         << std::endl;
     file << "tag_id       no. of apearances" << std::endl;
     file << "-------------------------------" << std::endl;
-    for (auto i = pointsAppearance.pointsApp.size() - 1; i > pointsAppearance.pointsApp.size() - 8 ; i--)
+    for (auto i = pointsAppearance.pointsApp.size() - 1; i > pointsAppearance.pointsApp.size() - 8; i--)
         file << "   " << std::setw(4) << std::left << pointsAppearance.pointsApp[i].tag_id << "         " << pointsAppearance.pointsApp[i].appearance << std::endl;
-    file << std::endl << "No. of tag_ids without appearance in polygons: " << pointsBeyond << std::endl;
+    file << std::endl
+         << "No. of tag_ids without appearance in polygons: " << pointsBeyond << std::endl;
     file.close();
 }
 
