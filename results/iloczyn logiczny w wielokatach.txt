@@ -1,0 +1,15 @@
+In polygon no. 0 are tag_ids:
+
+
+In polygon no. 1 are tag_ids:
+
+33 
+In polygon no. 2 are tag_ids:
+
+
+In polygon no. 3 are tag_ids:
+
+23 
+In polygon no. 4 are tag_ids:
+
+3 44 

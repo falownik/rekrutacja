@@ -1,0 +1,28 @@
+W folderze data znajduj¹ siê 3 pliki, z których pobierane s¹ dane:
+
+point_tag_id zawiera tag_id ze wspó³rzêdnymi
+polygon_node_id zawiera wspó³rzêdne wierzcho³ków
+polygon_node_location zawiera numery wierzcho³ków, z których sk³ada siê wielok¹t.
+
+Po pobraniu danych metod¹ Ray Casting Algorithm sprawdzane jest, czy punkt znajduje
+siê w wielok¹cie.
+
+Wyniki znajduj¹ siê w folderze results. Zadaniom odpowiadaj¹:
+
+-SprawdŸ dla ka¿dego po³o¿enia, czy znajduje siê ono w jednym z opisanych wielok¹tów.
+	"wszystkie punkty w danych wielokatach.txt" (wspó³rzêdne punktów zawieraj¹ce siê w 
+	wielok¹cie 1 i 2 nie zosta³y powtórzone na liœcie punktów wielok¹ta 1.
+
+-Wypisz jakie tag_id (bez powtórzeñ) s¹ w ka¿dym z wielok¹tów.
+ W tym do wielok¹ta “1” z wy³¹czeniem obszaru “2”.
+	"suma logiczna w wielokatach.txt"
+
+-Podaj najczêœciej wystêpuj¹ce tag_id, ile punktów nie nale¿y do ¿adnego wielok¹ta.
+	"statystyka.txt"
+
+------------------------------------------------------------------------------------------------
+Pozosta³e pliki w folderze results to wyniki obliczeñ takich jak:
+	iloczyn logiczny punktów (wszystkie punkty o danym tag_id zawarte w którymœ wielok¹cie)
+	suma logiczna punktów (przynajmniej jeden punkt o danym tag_id zawarty w którymœ wielok¹cie)
+	iloczyn logiczny w wielok¹tach (iloczyn logiczny wzglêdem wielok¹tów)
+	
